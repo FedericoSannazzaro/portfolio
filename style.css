@@ -204,6 +204,11 @@ body::-webkit-scrollbar-track {
     position: relative;
 }
 
+.foto__mia{
+    border-radius: 75%;
+    padding-top: 5rem;
+}
+
 .message__bubble {
     display: inline-block;
     position: relative;
@@ -263,7 +268,7 @@ body::-webkit-scrollbar-track {
         height: 75vh;
  
  }
-    
+
 }
 
 /* ------- ABOUT ME -------- */
