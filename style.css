@@ -204,10 +204,15 @@ body::-webkit-scrollbar-track {
     position: relative;
 }
 
-.foto__mia{
-    border-radius: 75%;
-    padding-top: 5rem;
+.imagen__mia{
+    width: 500px;
+    height: 500px;
 }
+
+.foto__mia{
+    border-radius: 50%;
+
+  }
 
 .message__bubble {
     display: inline-block;
@@ -268,6 +273,17 @@ body::-webkit-scrollbar-track {
         height: 75vh;
  
  }
+
+ .imagen__mia{
+    width: 200px;
+    height: 200px;
+    padding-top: 1rem;
+}
+
+.foto__mia{
+    border-radius: 50%;
+
+  }
 
 }
 
