@@ -92,6 +92,7 @@ body::-webkit-scrollbar-track {
     .navbar {
         padding: 0 2rem;
     }
+
     .navbar .checkbox {
         position: absolute;
         display: block;
@@ -198,7 +199,7 @@ body::-webkit-scrollbar-track {
     width: 100%;
 }
 .home__page {
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     position: relative;
 }
@@ -253,12 +254,15 @@ body::-webkit-scrollbar-track {
     .home__buttons a {
         padding: 1rem 1rem !important;
     }
+
+    
 }
 @media screen and (max-width: 1200px) {
     .home__page{
         padding-top: 10rem;
-    }
-
+        height: 75vh;
+ 
+ }
     
 }
 
