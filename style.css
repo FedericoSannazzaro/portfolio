@@ -426,6 +426,15 @@ body::-webkit-scrollbar-track {
 .project__card .project__info p {
     font-size: small;
     margin-top: 2rem;
+    color: var(--bg-color);
+}
+
+.project__card .project__info h2 {
+    color: var(--bg-color);
+}
+
+.project__card .project__info span {
+    color: var(--bg-color);
 }
 
 .project__card .fa-arrow-right-long {
@@ -439,6 +448,7 @@ body::-webkit-scrollbar-track {
     left: 50%;
     opacity: 1;
     pointer-events: unset;
+    
 }
 
 .project__card:hover .overlay {
@@ -451,6 +461,7 @@ body::-webkit-scrollbar-track {
 }
 .project__card.show {
     animation: fadeIn 0.5s ease;
+    
 }
 @keyframes fadeIn {
     0% {
