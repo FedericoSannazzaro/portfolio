@@ -15,10 +15,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
+    <script src="./main.js" defer></script>
+
 </head>
 
 <body>
-    <!-- HEADER -->
+
+
+                                                    <!-- HEADER -->
+
+
     <header class="flex w-full fixed top-0 z-1">
         <nav class="flex justify-content-between w-full navbar">
             <span class="logo cursor-pointer" onclick="scrollToSection('home')">
@@ -45,7 +51,11 @@
             </div>
         </nav>
     </header>
-    <!--HOME PAGE -->
+
+
+                                                    <!--HOME PAGE -->
+
+
     <div class="container">
         <section id="home"
             class="home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
@@ -69,19 +79,27 @@
             </div>
             <div class="right__content col-8 sm:col-6 xl:col-5">
                 <div class="imagen__mia">
-                    <img class="foto__mia" src="./assets/foto-perfil.png" alt="Foto perfil" width="100" height="100">
+                    <img class="foto__mia" src="./assets/foto-perfil.png" alt="Foto perfil" width="100" height="100"
+                        style="max-width: 100%;">
+
 
                 </div>
             </div>
         </section>
-        <!--ABOUT ME-->
+
+        
+                                                    <!--ABOUT ME-->
+
+
         <section id="about" class="about__me w-full min-h-screen flex align-items-center">
             <div class="aboutMe__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0">
                 <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
                     <h1 class="text-3xl md:text-5xl">Sobre mí</h1>
-                    <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        em magni harum sit eum aperiam repellat, incidunt provident dolor laborum animi
-                        nam eaque nobis illo est. Qui culpa itaque enim aspernatur?</p>
+                    <p class="text-gray-500">"¡Hola! Soy una persona inquieta y responsable que siempre está en busca de
+                        aprendizaje continuo. Me considero autodidacta y detallista en mi trabajo. Me apasiona la
+                        programación y estoy en constante aprendizaje de nuevos lenguajes para poder posicionar tu marca
+                        en línea de manera efectiva. Si buscas un profesional en desarrollo web comprometido y dedicado,
+                        ¡has encontrado al indicado!"</p>
                     <div class="knowledge flex flex-column gap-3 mt-5">
                         <p>HTML 99%</p>
                         <div class="progress__bar progress__html">
@@ -117,7 +135,11 @@
             </div>
         </section>
     </div>
-    <!--FREE LANCER SECTION -->
+
+
+                                                    <!--FREE LANCER SECTION -->
+
+
     <section class="freelancer mb-4 mt-4 min-w-full flex flex-column justify-content-center align-items-center">
         <p class="text-sm">Tienes un proyecto en mente?</p>
         <h1 class="text-center">Estoy disponible como freelancer</h1>
@@ -126,15 +148,21 @@
                 class="cursor-pointer no-underline border-round-lg">Escríbeme</a>
         </div>
     </section>
-    <!--SERVICES -->
+
+
+                                                        <!--SERVICES -->
+
+
     <div class="container">
         <section id="services" class="services min-h-full w-full pb-7">
             <div class="services__title flex flex-column gap-3 text-center">
                 <h1 class="text-3xl md:text-5xl">Mis servicios</h1>
-                <p class="text-gray-400 text-sm md:text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odit ab mollitia optio quod
-                    recusandae placeat aliquam veniam officiis cum quam eum architecto quidem, nobis commodi consequatur
-                    distinctio ullam non.
+                <p class="text-gray-500 text-sm md:text-base">
+                    Ofrezco servicios de desarrollo web, utilizando HTML, CSS y JavaScript para crear sitios web
+                    responsivos, elegantes y modernos. También ofrezco servicios de desarrollo de aplicaciones web
+                    utilizando ReactJS. Si necesitas soluciones de diseño personalizadas, puedo trabajar con SASS para
+                    crear estilos únicos y atractivos para tu sitio web o aplicación. ¡Permíteme ayudarte a dar vida a
+                    tu visión en línea!.
                 </p>
             </div>
             <div class="services__card w-full grid grid-nogutter mt-7 gap-5">
@@ -156,10 +184,10 @@
                 </div>
                 <div class="card flex align-items-center col-12 sm:col-6 md:col-3 lg:col gap-3 p-2">
                     <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-sass"></i>
+                        <i class="fa-brands fa-square-js"></i>
                     </div>
                     <div class="service__name">
-                        <p>Sass</p>
+                        <p>JavaScript</p>
                     </div>
                 </div>
                 <div class="card flex align-items-center col-12 sm:col md:col lg:col-4 gap-3 p-2">
@@ -172,119 +200,96 @@
                 </div>
                 <div class="card flex align-items-center col-12 sm:col-6 md:col-4 lg:col-4 gap-3 p-2">
                     <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-square-js"></i>
+                        <i class="fa-brands fa-bootstrap"></i>
                     </div>
                     <div class="service__name">
-                        <p>JavaScript</p>
+                        <p>Boostrap</p>
                     </div>
                 </div>
                 <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
                     <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-solid fa-code"></i>
+                        <i class="fa-brands fa-sass"></i>
                     </div>
                     <div class="service__name">
-                        <p>Desarrollo web</p>
+                        <p>Sass</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--PORTFOLIO -->
+
+                                                    <!--PORTFOLIO -->
+
+
         <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
             <div class="portfolio__title flex flex-column gap-3 text-center">
                 <h1 class="text-3xl md:text-5xl">Mi trabajo</h1>
                 <p class="text-gray-400 text-sm md:text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odit ab mollitia optio quod
-                    recusandae placeat aliquam veniam officiis cum quam eum architecto quidem, nobis commodi consequatur
-                    distinctio ullam non.
+                    "Desarrollador web con experiencia en la creación de sitios web y comercios electrónicos con
+                    JavaScript. Actualmente trabajando en un proyecto de sitio web completo para compradores. ¡Mira mis
+                    proyectos anteriores y contáctame para discutir cómo puedo ayudarte en tu próximo proyecto web!"
                 </p>
             </div>
             <div class="portfolio__gallery">
                 <div class="gallery__categories mb-5 mt-5">
                     <ul class="flex list-none flex-wrap justify-content-center gap-3">
                         <li class="filter-item active" data-filter="all">Todos</li>
-                        <li class="filter-item " data-filter="gym">Gimnasio</li>
-                        <li class="filter-item " data-filter="tours__Web">Tours web</li>
-                        <li class="filter-item " data-filter="world__Tours">Inmobiliaria web</li>
-                        <li class="filter-item " data-filter="e__commerce">E-commerce</li>
+                        <li class="filter-item " data-filter="stand__up">Stand UP</li>
+                        <li class="filter-item " data-filter="e__commerce">E-Commerce</li>
+                        <li class="filter-item " data-filter="proximamente">Proximamente</li>
+                        <!-- <li class="filter-item " data-filter="e__commerce">E-commerce</li> -->
                     </ul>
                 </div>
                 <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
-                    <div class="project__card tours__Web">
-                        <img src="./assets/proyecto-1.png" alt="">
+                    <div class="project__card stand__up">
+                        <img src="./assets/proyecto-1.png" alt="foto relacionada al proyecti stand__up">
                         <div class="overlay"></div>
                         <div
                             class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Travel Tours</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            <h2>Stand UP</h2>
+                            <p>Mi primer proyecto integral FrontEnd
                             </p>
-                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                            <a href="https://federicosannazzaro.github.io/proyecto-final-federico-sannazzaro/index.html"
+                                target="_blank"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
                         </div>
                     </div>
                     <div class="project__card e__commerce">
-                        <img src="./assets/proyecto-2.png" alt="">
+                        <img src="./assets/proyecto-2.png" alt="foto relacionada al proyecti e__commerce">
                         <div class="overlay"></div>
                         <div
                             class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Travel Tours</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            <h2>E-Commerce</h2>
+                            <p>Proyecto E-commerce aplicando JS. 100% funcional, estoy trabajando en el estilado para
+                                aplicarlo a una tienda real.
+                            </p>
+                            <a href="https://federicosannazzaro.github.io/federico.sannazzaro-proyecto-final-coder-js/"
+                                target="_blank"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="project__card proximamente">
+                        <img src="./assets/proyecto-3.png" alt="foto relacionada al proyecto compras__proximamente">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Compras</h2>
+                            <p>Trabajando actualmente en una pagina web dedicada al area de compras.
                             </p>
                             <span><i class="fa-solid fa-arrow-right-long"></i></span>
                         </div>
                     </div>
-                    <div class="project__card tours__Web">
-                        <img src="./assets/proyecto-3.png" alt="">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Travel Tours</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
-                            </p>
-                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                        </div>
-                    </div>
-                    <div class="project__card gym">
-                        <img src="./assets/proyecto-4.jpeg" alt="">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Travel Tours</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
-                            </p>
-                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                        </div>
-                    </div>
-                    <div class="project__card world__Tours">
-                        <img src="./assets/proyecto-5.jpg" alt="">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Travel Tours</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
-                            </p>
-                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                        </div>
-                    </div>
-                    <div class="project__card tours__Web">
-                        <img src="./assets/proyecto-6.webp" alt="">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Travel Tours</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
-                            </p>
-                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>
-        <!--FOOTER -->
+
+
+                                                    <!--FOOTER -->
+
+
         <footer id="contact" class="min-h-full w-full flex grid col-12 justify-content-center pb-8 pt-8 lg:text-center">
             <div class="social__media col-12 md:col-4 flex flex-column justify-content-between">
                 <h3>Redes sociales</h3>
-                <p>Auténtico e innovador</p>
-                <p>Desarrollo lo que necesitas, con un enfoque en usabilidad y rendimiento</p>
+                <p>¡Posiciona tu marca en línea de manera efectiva con mi ayuda!"</p>
                 <div class="social__mediaIcons mt-5 flex lg:justify-content-center gap-3">
                     <a href="https://www.facebook.com/federicosannazzaro" target="_blank" aria-label="Ir a facebook">
                         <i class="fa-brands fa-facebook"></i>
@@ -320,42 +325,20 @@
                     </span>Escríbeme
                 </a>
             </div>
-            <div
+            <!-- <div
                 class="my__services col-12 sm:col-6 sm:p-0 md:col-4 md:pt-2 md:align-items-center flex flex-column justify-content-between">
                 <h3>Mis Servicios</h3>
                 <p>Desarrollo web</p>
                 <p>Desarrollo móvil</p>
                 <p>Diseñador UI /UX</p>
                 <P>Marketing Digital</P>
-            </div>
+            </div> -->
         </footer>
     </div>
 
+
 </body>
-<script>
-    const filterContainer = document.querySelector(".gallery__categories");
-    const galleryItems = document.querySelectorAll(".project__card");
 
-    filterContainer.addEventListener("click", (event) => {
-        if (event.target.classList.contains("filter-item")) {
-            filterContainer.querySelector(".active").classList.remove("active");
-            event.target.classList.add("active")
-            const filterValue = event.target.getAttribute("data-filter")
-            galleryItems.forEach(item => {
-                if (item.classList.contains(filterValue) || filterValue === "all") {
-                    item.classList.remove("hide")
-                    item.classList.add("show")
-                } else {
-                    item.classList.remove("show")
-                    item.classList.add("hide")
-                }
-            })
-        }
-    })
 
-    function scrollToSection(sectionId) {
-        document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" })
-    }
-</script>
 
 </html>

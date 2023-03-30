@@ -11,6 +11,7 @@
     --secondary-bg-color: #4754a3;
     --font: "Roboto";
 }
+
 body {
     background-color: var(--bg-color);
     font-family: var(--font);
@@ -41,10 +42,12 @@ body::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: rgb(165, 162, 162);
 }
+
 body::-webkit-scrollbar-thumb:hover,
 body::-webkit-scrollbar-thumb:active {
     background-color: var(--secondary-bg-color);
 }
+
 body::-webkit-scrollbar-track {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -69,6 +72,14 @@ body::-webkit-scrollbar-track {
     padding: 3.5rem 1.2rem 1rem 1.2rem;
     cursor: pointer;
 }
+/* 
+.hireMe__button {
+    transition: transform .2s;
+}
+
+.hireMe__button:hover {
+    transform: scale(1.2);
+} */
 
 .hireMe__button a {
     background-color: var(--secondary-bg-color);
@@ -78,8 +89,11 @@ body::-webkit-scrollbar-track {
     padding: 1rem 1.5rem;
     border-color: unset;
     border-width: 0;
-    
+
+
+
 }
+
 .header__info ul li:hover {
     background-color: var(--secondary-bg-color);
     color: var(--bg-color);
@@ -125,13 +139,16 @@ body::-webkit-scrollbar-track {
         border-radius: 10px;
         background: #000;
     }
+
     .navbar .hamburger__lines .line1 {
         transform-origin: 0% 0%;
         transition: transform 0.4s ease-in-out;
     }
+
     .navbar .hamburger__lines .line2 {
         transition: transform 0.2s ease-in-out;
     }
+
     .navbar .hamburger__lines .line3 {
         transform-origin: 0% 100%;
         transition: transform 0.4s ease-in-out;
@@ -164,28 +181,30 @@ body::-webkit-scrollbar-track {
         transition: transform 0.5s ease-in-out;
     }
 
-    .navbar input[type="checkbox"]:checked ~ .header__info {
+    .navbar input[type="checkbox"]:checked~.header__info {
         transform: translateX(0);
     }
 
-    .navbar input[type="checkbox"]:checked ~ .hamburger__lines .line1 {
+    .navbar input[type="checkbox"]:checked~.hamburger__lines .line1 {
         transform: rotate(45deg);
     }
 
-    .navbar input[type="checkbox"]:checked ~ .hamburger__lines .line2 {
+    .navbar input[type="checkbox"]:checked~.hamburger__lines .line2 {
         transform: scaleY(0);
     }
 
-    .navbar input[type="checkbox"]:checked ~ .hamburger__lines .line3 {
+    .navbar input[type="checkbox"]:checked~.hamburger__lines .line3 {
         transform: rotate(-45deg);
-    } 
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-    .navbar{
+    .navbar {
         padding: 0 12rem;
     }
-    .navbar .checkbox, .navbar .hamburger__lines {
+
+    .navbar .checkbox,
+    .navbar .hamburger__lines {
         right: 12rem;
     }
 }
@@ -193,26 +212,28 @@ body::-webkit-scrollbar-track {
 
 /* ------- HOME -------- */
 
-.right__content img{
+.right__content img {
     margin-top: 5rem;
     height: 100%;
     width: 100%;
 }
+
 .home__page {
     height: 100vh;
     width: 100%;
     position: relative;
 }
 
-.imagen__mia{
+.imagen__mia {
     width: 500px;
     height: 500px;
 }
 
-.foto__mia{
+.foto__mia {
     border-radius: 50%;
+    max-width: max-content;
 
-  }
+}
 
 .message__bubble {
     display: inline-block;
@@ -221,8 +242,9 @@ body::-webkit-scrollbar-track {
     height: auto;
     background-color: var(--secondary-bg-color);
     color: var(--bg-color);
-    
+
 }
+
 .triangle:after {
     content: "";
     position: absolute;
@@ -234,6 +256,7 @@ body::-webkit-scrollbar-track {
 .message__text {
     padding: 1rem;
 }
+
 .home__buttons button {
     padding: 1rem 2rem;
     color: var(--font-color);
@@ -257,33 +280,36 @@ body::-webkit-scrollbar-track {
     padding: 1rem 1.5rem;
 }
 
+
 @media screen and (max-width: 576px) {
     .message__bubble {
         width: 160px;
     }
+
     .home__buttons a {
         padding: 1rem 1rem !important;
     }
 
-    
+
 }
+
 @media screen and (max-width: 1200px) {
-    .home__page{
+    .home__page {
         padding-top: 10rem;
         height: 75vh;
- 
- }
 
- .imagen__mia{
-    width: 200px;
-    height: 200px;
-    padding-top: 1rem;
-}
+    }
 
-.foto__mia{
-    border-radius: 50%;
+    .imagen__mia {
+        width: 200px;
+        height: 200px;
+        padding-top: 1rem;
+    }
 
-  }
+    .foto__mia {
+        border-radius: 50%;
+
+    }
 
 }
 
@@ -307,18 +333,22 @@ body::-webkit-scrollbar-track {
     height: 100%;
     position: absolute;
 }
+
 .progress__html span {
     background-color: #ff4900;
     width: 99%;
 }
-.progress__css  span {
+
+.progress__css span {
     background-color: #ff7004;
     width: 99%;
 }
+
 .progress__javaScript span {
     background-color: #ff9809;
     width: 85%;
 }
+
 .progress__sass span {
     background-color: #ff9809;
     width: 75%;
@@ -333,7 +363,7 @@ body::-webkit-scrollbar-track {
 
 .freelancer {
     height: 50vh;
-    background-image: linear-gradient(#4753a3be, rgba(0, 0, 0, 0.9)) ,url(./assets/freelancer2.webp);
+    background-image: linear-gradient(#4753a3be, rgba(0, 0, 0, 0.9)), url(./assets/freelancer2.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -344,10 +374,12 @@ body::-webkit-scrollbar-track {
 .services {
     padding-top: 81px;
 }
+
 .card {
     background-color: #fff;
     transition: all 0.2s ease-in;
 }
+
 .service__logo {
     height: 60px;
     width: 60px;
@@ -365,9 +397,11 @@ body::-webkit-scrollbar-track {
     background-color: var(--secondary-bg-color);
     color: var(--bg-color);
 }
+
 .card:hover .service__logo {
     background-color: #fff;
 }
+
 .card:hover .service__logo i {
     color: #000;
 }
@@ -379,6 +413,7 @@ body::-webkit-scrollbar-track {
     font-size: large;
     cursor: pointer;
 }
+
 .gallery__categories .filter-item.active {
     border-bottom: 1px solid var(--secondary-bg-color);
 }
@@ -389,6 +424,7 @@ body::-webkit-scrollbar-track {
     display: block;
     position: relative;
 }
+
 .project__card img {
     width: 100%;
     height: 100%;
@@ -448,7 +484,7 @@ body::-webkit-scrollbar-track {
     left: 50%;
     opacity: 1;
     pointer-events: unset;
-    
+
 }
 
 .project__card:hover .overlay {
@@ -459,14 +495,17 @@ body::-webkit-scrollbar-track {
 .project__card.hide {
     display: none;
 }
+
 .project__card.show {
     animation: fadeIn 0.5s ease;
-    
+
 }
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -476,6 +515,18 @@ body::-webkit-scrollbar-track {
 footer {
     border-top: 2px solid #fff;
     background-color: #fff;
+    background-image: linear-gradient(#4753a3be, rgba(0, 0, 0, 0.9)), url(./assets/about-me.webp);
+
+}
+
+footer h3 {
+    color: #fff;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #fff !important;
+    font-weight: 400;
 }
 
 :is(.social__media, .contact, .my__services) h3 {
@@ -494,13 +545,14 @@ footer {
 }
 
 .social__mediaIcons .fa-brands:hover {
-    color: var(--secondary-bg-color);
+    color: #fff;
 }
+
 .contact a {
     padding: 0.5rem 1.8rem;
     background-color: unset;
     border: 1px solid var(--secondary-bg-color);
     font-family: var(--font);
     font-size: 0.9rem;
-    color: #a3a3a3;
+    color: #fff;
 }
