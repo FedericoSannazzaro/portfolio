@@ -258,8 +258,6 @@ body::-webkit-scrollbar-track {
 .typing__text{
     position: relative;
     color: var(--secondary-bg-color);
-    font-size: 30px;
-    font-weight: 600;
 }
 
 .typing__text::before{
@@ -268,7 +266,7 @@ body::-webkit-scrollbar-track {
     top: 0;
     left: 0;
     height: 100%;
-    width: 95%;
+    width: 99%;
     background-color: #f3f3f3;
     border-left: 0.3rem solid var(--secondary-bg-color);
     animation: animate 4s steps(12) infinite;

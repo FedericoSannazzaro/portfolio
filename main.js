@@ -20,13 +20,13 @@ const text = document.querySelector(".typing__text");
 
 const textLoad = () => {
             setTimeout(() => {
-                text.textContent = "Comercial.";
+               text.textContent = "Comercial";
             }, 0);
             setTimeout(() => {
-                text.textContent = "Servicios Informaticos.";
+                text.textContent = "Servicios Informaticos";
             }, 4000);
             setTimeout(() => {
-                text.textContent = "Desarrollo Web.";
+                text.textContent = "Desarrollo Web";
             }, 8000); //1s = 1000 milliseconds
         }
 
