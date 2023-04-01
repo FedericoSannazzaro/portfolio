@@ -1,8 +1,9 @@
-/* --------GENERAL STYLES -------- */
+                                                    /* --------GENERAL STYLES -------- */
 * {
     margin: 0;
     padding: 0;
-    scroll-padding-top: 4rem;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -32,7 +33,7 @@ body {
     }
 }
 
-/* ------ CHANGE SCROLL BAR -------*/
+                                                    /* ------ CHANGE SCROLL BAR -------*/
 body::-webkit-scrollbar {
     width: 0.6rem;
 }
@@ -54,7 +55,7 @@ body::-webkit-scrollbar-track {
     background-color: rgba(104, 103, 103, 0.3);
 }
 
-/* ------- HEADER -------- */
+                                                    /* ------- HEADER -------- */
 .navbar {
     padding: 0 12rem;
     background-color: #fff;
@@ -72,14 +73,6 @@ body::-webkit-scrollbar-track {
     padding: 3.5rem 1.2rem 1rem 1.2rem;
     cursor: pointer;
 }
-/* 
-.hireMe__button {
-    transition: transform .2s;
-}
-
-.hireMe__button:hover {
-    transform: scale(1.2);
-} */
 
 .hireMe__button a {
     background-color: var(--secondary-bg-color);
@@ -100,7 +93,7 @@ body::-webkit-scrollbar-track {
 }
 
 
-/**Responsive design navbar**/
+                                                    /**Responsive design navbar**/
 
 @media screen and (max-width: 1200px) {
     .navbar {
@@ -143,16 +136,16 @@ body::-webkit-scrollbar-track {
     .navbar .hamburger__lines .line1 {
         transform-origin: 0% 0%;
         transition: transform 0.4s ease-in-out;
-    }
+            }
 
     .navbar .hamburger__lines .line2 {
         transition: transform 0.2s ease-in-out;
-    }
+            }
 
     .navbar .hamburger__lines .line3 {
         transform-origin: 0% 100%;
         transition: transform 0.4s ease-in-out;
-    }
+            }
 
     .header__info ul li {
         padding: 0;
@@ -169,7 +162,8 @@ body::-webkit-scrollbar-track {
     .header__info {
         padding-top: 120px;
         height: 100vh;
-        background: var(--secondary-bg-color);
+        background: #4753a392;
+        backdrop-filter: blur(2.7px);
         width: 100%;
         position: absolute;
         top: 0;
@@ -179,22 +173,27 @@ body::-webkit-scrollbar-track {
         display: flex;
         flex-direction: column;
         transition: transform 0.5s ease-in-out;
+        
     }
 
     .navbar input[type="checkbox"]:checked~.header__info {
         transform: translateX(0);
+        
     }
 
     .navbar input[type="checkbox"]:checked~.hamburger__lines .line1 {
         transform: rotate(45deg);
+        background: #fff;
     }
 
     .navbar input[type="checkbox"]:checked~.hamburger__lines .line2 {
         transform: scaleY(0);
+        background: #fff;
     }
 
     .navbar input[type="checkbox"]:checked~.hamburger__lines .line3 {
         transform: rotate(-45deg);
+        background: #fff;
     }
 }
 
@@ -210,7 +209,7 @@ body::-webkit-scrollbar-track {
 }
 
 
-/* ------- HOME -------- */
+                                                    /* ------- HOME -------- */
 
 .right__content img {
     margin-top: 5rem;
@@ -232,7 +231,6 @@ body::-webkit-scrollbar-track {
 .foto__mia {
     border-radius: 50%;
     max-width: max-content;
-
 }
 
 .message__bubble {
@@ -255,6 +253,34 @@ body::-webkit-scrollbar-track {
 
 .message__text {
     padding: 1rem;
+}
+
+.typing__text{
+    position: relative;
+    color: var(--secondary-bg-color);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.typing__text::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 95%;
+    background-color: #f3f3f3;
+    border-left: 0.3rem solid var(--secondary-bg-color);
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
 }
 
 .home__buttons button {
@@ -290,19 +316,17 @@ body::-webkit-scrollbar-track {
         padding: 1rem 1rem !important;
     }
 
-
 }
 
 @media screen and (max-width: 1200px) {
     .home__page {
         padding-top: 10rem;
         height: 75vh;
-
     }
 
     .imagen__mia {
-        width: 200px;
-        height: 200px;
+        width: 400px;
+        height: 400px;
         padding-top: 1rem;
     }
 
@@ -311,9 +335,13 @@ body::-webkit-scrollbar-track {
 
     }
 
+    .right__content img {
+        margin-top: 0.2rem;
+    }
+
 }
 
-/* ------- ABOUT ME -------- */
+                                                    /* ------- ABOUT ME -------- */
 
 .about__me .image img {
     height: 100%;
@@ -359,7 +387,7 @@ body::-webkit-scrollbar-track {
     width: 65%;
 }
 
-/* ------- FREE LANCER -------- */
+                                                    /* ------- FREE LANCER -------- */
 
 .freelancer {
     height: 50vh;
@@ -370,7 +398,7 @@ body::-webkit-scrollbar-track {
     color: var(--bg-color);
 }
 
-/* ------- SERVICES -------- */
+                                                    /* ------- SERVICES -------- */
 .services {
     padding-top: 81px;
 }
@@ -407,7 +435,7 @@ body::-webkit-scrollbar-track {
 }
 
 
-/* ------- PORTFOLIO -------- */
+                                                    /* ------- PORTFOLIO -------- */
 
 .gallery__categories ul li {
     font-size: large;
@@ -511,12 +539,13 @@ body::-webkit-scrollbar-track {
     }
 }
 
-/* ------- FOOTER -------- */
+                                                    /* ------- FOOTER -------- */
 footer {
     border-top: 2px solid #fff;
     background-color: #fff;
     background-image: linear-gradient(#4753a3be, rgba(0, 0, 0, 0.9)), url(./assets/about-me.webp);
-
+    min-height: 100vh;
+    margin-top: 5rem;
 }
 
 footer h3 {
